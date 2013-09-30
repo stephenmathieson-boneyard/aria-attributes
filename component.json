@@ -1,0 +1,19 @@
+{
+  "name": "aria-attributes",
+  "repo": "stephenmathieson/aria-attributes",
+  "description": "getter/setters for ARIA attributes",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/trim": "*",
+    "component/bind": "*"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
