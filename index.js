@@ -1,5 +1,6 @@
 
 var trim = require('trim'),
+    indexof = require('indexof'),
     bind = require('bind');
 
 
@@ -18,7 +19,7 @@ map([
   }
 
   var ids = split(val, ' ');
-  if (ids.indexOf(id) == -1) {
+  if (indexof(ids, id) == -1) {
     ids.push(id);
   }
 

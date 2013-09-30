@@ -6,7 +6,8 @@
   "keywords": [],
   "dependencies": {
     "component/trim": "*",
-    "component/bind": "*"
+    "component/bind": "*",
+    "component/indexof": "*"
   },
   "development": {
     "component/assert": "*"
