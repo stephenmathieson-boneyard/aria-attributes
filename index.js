@@ -1,7 +1,8 @@
 
 var trim = require('trim'),
     indexof = require('indexof'),
-    bind = require('bind');
+    bind = require('bind'),
+    rndid = require('rndid');
 
 
 // space-delimited methods
@@ -16,6 +17,11 @@ map([
 
   if (!id) {
     return val;
+  }
+
+  // duck typing dom nodes
+  if (typeof id === 'object' && id.nodeType) {
+    id = id.id = id.id || rndid();
   }
 
   var ids = split(val, ' ');

@@ -13,7 +13,8 @@
   "dependencies": {
     "component/trim": "*",
     "component/bind": "*",
-    "component/indexof": "*"
+    "component/indexof": "*",
+    "stephenmathieson/rndid": "*"
   },
   "development": {
     "component/assert": "*"

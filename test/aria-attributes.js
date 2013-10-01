@@ -29,6 +29,14 @@ describe('aria', function () {
     it('should return the aria-describedby value', function () {
       assert(aria.describedBy(fixture) === 'hello world');
     });
+
+    it('should operate with DOM nodes', function () {
+      var div = document.createElement('div');
+      aria.describedBy(fixture, div);
+      assert(div.id);
+      assert(typeof div.id === 'string');
+      assert(fixture.getAttribute('aria-describedby') === 'hello world ' + div.id);
+    });
   });
 
   describe('controls', function () {
@@ -55,6 +63,14 @@ describe('aria', function () {
 
     it('should return the aria-controls value', function () {
       assert(aria.controls(fixture) === 'hello world');
+    });
+
+    it('should operate with DOM nodes', function () {
+      var div = document.createElement('div');
+      aria.controls(fixture, div);
+      assert(div.id);
+      assert(typeof div.id === 'string');
+      assert(fixture.getAttribute('aria-controls') === 'hello world ' + div.id);
     });
   });
 
@@ -83,6 +99,14 @@ describe('aria', function () {
     it('should return the aria-flowto value', function () {
       assert(aria.flowTo(fixture) === 'hello world');
     });
+
+    it('should operate with DOM nodes', function () {
+      var div = document.createElement('div');
+      aria.flowTo(fixture, div);
+      assert(div.id);
+      assert(typeof div.id === 'string');
+      assert(fixture.getAttribute('aria-flowto') === 'hello world ' + div.id);
+    });
   });
 
   describe('labelledBy', function () {
@@ -110,6 +134,14 @@ describe('aria', function () {
     it('should return the aria-labelledby value', function () {
       assert(aria.labelledBy(fixture) === 'hello world');
     });
+
+    it('should operate with DOM nodes', function () {
+      var div = document.createElement('div');
+      aria.labelledBy(fixture, div);
+      assert(div.id);
+      assert(typeof div.id === 'string');
+      assert(fixture.getAttribute('aria-labelledby') === 'hello world ' + div.id);
+    });
   });
 
   describe('owns', function () {
@@ -136,6 +168,14 @@ describe('aria', function () {
 
     it('should return the aria-owns value', function () {
       assert(aria.owns(fixture) === 'hello world');
+    });
+
+    it('should operate with DOM nodes', function () {
+      var div = document.createElement('div');
+      aria.owns(fixture, div);
+      assert(div.id);
+      assert(typeof div.id === 'string');
+      assert(fixture.getAttribute('aria-owns') === 'hello world ' + div.id);
     });
   });
 
