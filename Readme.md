@@ -19,9 +19,9 @@
   - `aria.labelledBy(element, id)`
   - `aria.owns(element, id)`
 
-  When `id` is provided, will update element's corresponding `aria-` attribute to include `id`.  Will not clobber an existing value or re-add the same `id`.
+When `id` is provided, will update element's corresponding `aria-` attribute to include `id`.  Will not clobber an existing value or re-add the same `id`.
 
-  When `id` is omitted, will return the current value of the corresponding `aria-` attribute.
+When `id` is omitted, will return the current value of the corresponding `aria-` attribute.
 
 ### Methods for boolean attributes
 
@@ -40,7 +40,7 @@
   - `aria.required(element, value)`
   - `aria.selected(element, value)`
 
-  Getter/setter for the element's corresponding `aria-` attribute.  Will return a proper `Boolean`.
+Getter/setter for the element's corresponding `aria-` attribute.  Will return a proper `Boolean`.
 
 ### Methods for generic string attributes
 
@@ -52,11 +52,18 @@
   - `aria.sort(element, str)`
   - `aria.valueText(element, str)`
 
-  Getter/setter for the element's corresponding `aria-` attribute.
+Getter/setter for the element's corresponding `aria-` attribute.
 
 ### Methods for number attributes
 
-  Getter/setter for the element's corresponding `aria-` attribute.  Will return a `Number`.
+  - `aria.level(element, num)`
+  - `aria.posInSet(element, num)`
+  - `aria.setSize(element, num)`
+  - `aria.valueMax(element, num)`
+  - `aria.valueMin(element, num)`
+  - `aria.valueNow(element, num)`
+
+Getter/setter for the element's corresponding `aria-` attribute.  Will return a `Number`.
 
 ## Example Usage
 
