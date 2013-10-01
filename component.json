@@ -1,9 +1,15 @@
 {
   "name": "aria-attributes",
   "repo": "stephenmathieson/aria-attributes",
-  "description": "getter/setters for ARIA attributes",
+  "description": "Getter/setters for ARIA attributes",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": [
+    "aria",
+    "attributes",
+    "getter",
+    "setter",
+    "dom"
+  ],
   "dependencies": {
     "component/trim": "*",
     "component/bind": "*",
